@@ -1,16 +1,54 @@
-# React + Vite
+# Cocktail Landing — Landing con GSAP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page de cócteles construida con React, Vite, GSAP y Tailwind CSS. Incluye animaciones con GSAP y diseño responsive.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** + **Vite 7**
+- **GSAP** y **@gsap/react** para animaciones
+- **Tailwind CSS 4** para estilos
+- **react-responsive** para diseño adaptable
 
-## React Compiler
+## Requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 18+
+- pnpm (recomendado) o npm
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+pnpm install
+# o
+npm install
+```
+
+## Scripts
+
+| Comando   | Descripción              |
+|----------|---------------------------|
+| `pnpm dev`   | Servidor de desarrollo con HMR |
+| `pnpm build` | Build de producción       |
+| `pnpm preview` | Vista previa del build  |
+| `pnpm lint`   | Ejecutar ESLint          |
+
+## Estructura principal
+
+```
+src/
+├── App.jsx
+├── index.css
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── About.jsx
+│   ├── Cocktails.jsx
+│   ├── Art.jsx
+│   ├── Menu.jsx
+│   └── Contact.jsx
+└── constants/
+    └── index.js
+```
+
+## Licencia
+
+Proyecto privado.
